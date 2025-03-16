@@ -41,7 +41,6 @@ def get_average():
             mins,secs = re.split(r'[:.]',racetime)
             total += datetime.timedelta(minutes=int(mins),
                                         seconds=int(secs))
-    print(f'{total/len(racetimes)}'[2:-5])
-    pass
+    return f'{total/len(racetimes)}'[2:-5]
 
 get_average()
